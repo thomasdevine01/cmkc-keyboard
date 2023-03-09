@@ -1,2 +1,9 @@
-# cmkc_pcb
-Pcb design for the Chico Mechanical Keyboard Club
+!!!Chico State Mechanical Keyboard Club!!!
+
+This is the test branch for the Chico State Mechanical Keyboard Club PCB Design
+
+
+!Parts:!
+
+Nice! Nano:  tinyurl.com/mr4983hr 
+
