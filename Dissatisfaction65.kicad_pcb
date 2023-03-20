@@ -44,10 +44,10 @@
     )
     (pad_to_mask_clearance 0)
     (pcbplotparams
-      (layerselection 0x00010f0_ffffffff)
+      (layerselection 0x00010fc_ffffffff)
       (disableapertmacros false)
       (usegerberextensions true)
-      (usegerberattributes false)
+      (usegerberattributes true)
       (usegerberadvancedattributes false)
       (creategerberjobfile false)
       (svguseinch false)
@@ -74,7 +74,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "C:/Users/Nick/Documents/Dissatisfaction 65/Gerbers/")
+      (outputdirectory "Gerbers/")
     )
   )
 
