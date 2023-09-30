@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/thomas/repos/keyboard/keyboard"
+VIRTUAL_ENV="/Users/thomas/repos/cmkc_pcb/Firmware/keyboard"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/thomas/repos/keyboard/keyboard"
+set -gx VIRTUAL_ENV "/Users/thomas/repos/cmkc_pcb/Firmware/keyboard"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
