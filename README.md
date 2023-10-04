@@ -1,4 +1,6 @@
 # Chico State Mechanical Keyboard Club
+![Discord](https://img.shields.io/discord/1065358556045529160)
+
 
 This is the test branch for the Chico State Mechanical Keyboard Club PCB Design
 
