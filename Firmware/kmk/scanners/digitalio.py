@@ -1,10 +1,10 @@
 import digitalio
-import board
-
 
 from keypad import Event as KeyEvent
 
 from kmk.scanners import DiodeOrientation, Scanner
+
+import board
 
 
 class MatrixScanner(Scanner):
@@ -17,9 +17,6 @@ class MatrixScanner(Scanner):
         rollover_cols_every_rows=None,
         offset=0,
     ):
-        self.col_count = 15
-        self.LE = cols[5] # TODO fix LE
-        self.E = cols[5] #TODO fix E
         self.len_cols = len(cols)
         self.len_rows = len(rows)
         self.pull = pull
@@ -70,7 +67,7 @@ class MatrixScanner(Scanner):
             ]
             self.translate_coords = False
         else:
-            raise ValueError(f'Invalid DiodeOrientation: {self.diode_orienttaion}')
+            raise ValueError(f'Invalid DiodeOrientation: {self.diode_orientation}')
 
         if self.pull == digitalio.Pull.DOWN:
             self.outputs = self.anodes
@@ -91,7 +88,7 @@ class MatrixScanner(Scanner):
         if self.rollover_cols_every_rows is None:
             self.rollover_cols_every_rows = self.len_rows
 
-        self._key_count = self.len_cols * self.len_rows
+        self._key_count = (2**self.len_cols) * self.len_rows
         initial_state_value = b'\x01' if self.pull is digitalio.Pull.UP else b'\x00'
         self.state = bytearray(initial_state_value) * self.key_count
 
@@ -106,35 +103,21 @@ class MatrixScanner(Scanner):
         array itself for some crazy reason) consisting of (row, col, pressed)
         which are (int, int, bool)
         '''
-
-        # we are going to set a column high, scan rows
-
         
         ba_idx = 0
         any_changed = False
 
-        for oidx, opin in enumerate(self.outputs):
-            opin.value = self.pull is not digitalio.Pull.UP
+        for oidx in range(16):
+            bits = [(oidx >> bit) & 1 for bit in range(4 - 1, -1, -1)] # python wizardry
+            self.outputs[0].value = bits[3]
+            self.outputs[1].value = bits[2]
+            self.outputs[2].value = bits[1]
+            self.outputs[3].value = bits[0]
 
-            for iidx, ipin in range(self.len_cols):
-                # set columns high, read rows
-
-                
-
-                # set the decoder pins to select the column
-
-                for i in range(self.len_cols):
-                    if oidx & (1 << i):
-                        self.cols[i].value = self.pull if not digitalio.Pull.UP:
-                    else:
-                        self.cols[i].value = self.pull if digitalio.Pull.UP
-
+            for iidx, ipin in enumerate(self.inputs):
 
                 new_val = int(ipin.value)
                 old_val = self.state[ba_idx]
-
-
-
 
                 if old_val != new_val:
                     if self.translate_coords:
@@ -162,14 +145,11 @@ class MatrixScanner(Scanner):
 
                 ba_idx += 1
 
-            opin.value = self.pull is digitalio.Pull.UP
+            #opin.value = self.pull is digitalio.Pull.UP
             if any_changed:
                 break
 
         if any_changed:
-            key_number = self.len_cols * row + col + self.offset
+            key_number = (2 ** self.len_cols) * row + col  # convert to keyevent
+
             return KeyEvent(key_number, pressed)
-        
-    
-
-
