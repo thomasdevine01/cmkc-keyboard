@@ -1,27 +1,27 @@
 # Chico State Mechanical Keyboard Club
-![Discord](https://img.shields.io/discord/1065358556045529160)
+  
 
+<p align = "center">
+    <img src="Docs/Images/cmkc-keyboard1.jpg" width="500">
+</p>
 
-This is the test branch for the Chico State Mechanical Keyboard Club PCB Design
+<p align = "center">
+    A 65% keyboard that features a rotary encoder, OLED Screen and Programmable Firmware.
+</p>
 
-## Installation Guide
+## [Installation Guide](Docs/)
+## [Photo Gallery](Photos/)
+## [Parts](Docs/)
+## [Discord](https://discord.gg/PEPvhkmjvg)
+  
+<p align = "center">
+    <img src="https://discordapp.com/api/guilds/1065358556045529160/widget.png?style=banner1" alt="Discord Banner 1"/>
+</p>
 
-## Installing Firmware:
-- The Nice! Nano firmware uses [Circuit Python](https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython) and a modified version of KMK ( add link to repo );
-- Step 1: Download both Circuit Python and firmware files from the repo
-- Step 2: Install Circuit Python to the Nice! Nano
+[Discord Link Here](https://discord.gg/PEPvhkmjvg)
 
+### Credits
 
-
-
-
-## Parts:
-
-- Nice! Nano: [here](https://tinyurl.com/mr4983hr)
-
-
-## Sources:
-
-- Heavily based on the Dissatisfaction65 by Nicell! See the original [here](https://github.com/Nicell/Dissatisfaction-65)
-
+Circuit-Dude
+Thomas Devine 
 
