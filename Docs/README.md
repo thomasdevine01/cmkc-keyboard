@@ -2,7 +2,7 @@
 
 
 ### Table of Contents
-
+- If you want to use the Table of Contents for navigating the document - click the hambuger menu on the right hand side
 1. [Foreword](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#foreword)
 2. [Required Parts](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#required-parts)
 3. [Optional parts](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#optional-parts)
