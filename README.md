@@ -10,7 +10,7 @@
 </p>
 
 ## [Installation Guide](Docs/)
-## [Photo Gallery](Photos/)
+## [Photo Gallery](Docs/Images)
 ## [Parts](Docs/)
 ## [Discord](https://discord.gg/PEPvhkmjvg)
   
@@ -22,6 +22,6 @@
 
 ### Credits
 
-Circuit-Dude
-Thomas Devine 
+- Circuit-Dude
+- Thomas Devine 
 
