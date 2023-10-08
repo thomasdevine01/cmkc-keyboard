@@ -139,17 +139,14 @@ GreatScott!, on Youtube has a great soldering tutorial
 Soldering the diodes is probably the easiest task. We're first going to want to bend the legs of the diodes so that they're roughly spaced like the pads on the PCB.
 
 <p align = "left">
-    <img src="Images/cmkc-keyboard1.jpg" width="500">
+    <img src="Images/diode-example.jpg" width="200">
 </p>
+
 
 
 We're then going to put the legs of the diodes through the pads on the board.
 
 **NOTE:** The orientation of the diode is such that the black line seen on the body of the diode matches the line on the silkscreen of the PCB. The line of the body / silkscreen resembles the cathode of the diode.
-
-<p align = "left">
-    <img src="Images/diode-example.jpg" width="200">
-</p>
 
 
 With the diode in place, I like to bend the legs so that it stays in place and I can "rinse and repeat" for the remaining diodes
@@ -250,13 +247,13 @@ With the socket soldered in, I put the mill-max machine header pins into the soc
 Next place your uC onto the pins
 
 <p align = "left">
-    <img src="Images/nicenano-1.jpg" width="500">
+    <img src="Images/IMG-2288.jpg" width="500">
 </p>
 
 Solder the pins to the uC. Try not to use so much solder such that you end up soldering the uC to the socket .
 
 <p align = "left">
-    <img src="Images/nicenano-2.jpg" width="500">
+    <img src="Images/IMG-2289.jpg" width="500">
 </p>
 
 Once cooled, you can now remove and replace your uC during debug / assembly.
