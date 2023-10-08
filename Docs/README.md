@@ -78,30 +78,6 @@ All source documentation can be found: [https://github.com/thomasdevine01/cmkc\_
 - Steady hands
 - Thin / Pencil soldering iron tip for SMD portion
 
-
-## Minimum requirements
-
-- Soldering Iron
-- Sponge
-  - Water to wet the sponge
-- Steel wool pad
-- At least one tube of solder
-- Room with a window
-- Tweezers
-- Patience
-- Solder wick / solder sucker
-- Wire cutters
-  - Flush cuts preferred
-
-## Quality of Life Improvements
-
-- Adjustable lamp for additional lighting
-- Fan to exhaust soldering fumes
-- Flux
-- Thin / Precision tweezers
-- Steady hands
-- Thin / Pencil soldering iron tip for SMD portion
-
 ### PCBs: Quick Review
 
 PCB is a three letter acronym standing for "Printed Circuit Board". PCBs are a convenient and efficient way to connect devices and create physical circuits. PCBs can have multiple layers, allowing for complex layouts. The CMKC PCB is a two layer PCB, example below:
