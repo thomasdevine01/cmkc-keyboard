@@ -57,6 +57,27 @@ All source documentation can be found: [https://github.com/thomasdevine01/cmkc\_
 - Female socket
 
 ### Tools
+#### Minimum requirements
+- Soldering Iron
+- Sponge 
+  - Water to wet the sponge
+- Steel wool pad
+- At least one tube of solder 
+- Room with a window
+- Tweezers 
+- Patience 
+- Solder wick / solder sucker
+- Wire cutters
+- Flush cuts preferred
+
+#### Quality of Life Improvements
+- Adjustable lamp for additional lighting
+- Fan to exhaust soldering fumes
+- Flux 
+- Thin / Precision tweezers
+- Steady hands
+- Thin / Pencil soldering iron tip for SMD portion
+
 
 ## Minimum requirements
 
@@ -85,7 +106,10 @@ All source documentation can be found: [https://github.com/thomasdevine01/cmkc\_
 
 PCB is a three letter acronym standing for "Printed Circuit Board". PCBs are a convenient and efficient way to connect devices and create physical circuits. PCBs can have multiple layers, allowing for complex layouts. The CMKC PCB is a two layer PCB, example below:
 
-![](RackMultipart20231006-1-m7hbjw_html_483efb041a21293a.png)
+<p align = "left">
+    <img src="Images/PCB-quick-review.png" width="500">
+</p>
+
 
 Essentially, copper is sandwiched between layers of a dielectric material and then "etched" to remove copper where we don't want connections and masked to leave copper where we want connections. Solder mask is applied to the outer layers so that copper is exposed only on device "pads" or places we want exposed for probing, test points, etc. Vias connect copper on different layers.
 
@@ -97,7 +121,7 @@ Soldering is the process of electrically connecting two (or more) pieces of meta
 
 There are two main types of technologies that describe how parts connect to PCBs: through hole (THT) and Surface Mount (SMD , SMT). 99% of the parts used on the CMKC PCB are through hole, there is ONE SMD that we will need to solder down in order to make our Keyboard work.
 
-GreatScott!, on Youtube has a pretty great soldering tutorial (IMO)
+GreatScott!, on Youtube has a great soldering tutorial
 [https://www.youtube.com/watch?v=VxMV6wGS3NY](https://www.youtube.com/watch?v=VxMV6wGS3NY)
 
 ## Soldering Tips
@@ -110,31 +134,48 @@ GreatScott!, on Youtube has a pretty great soldering tutorial (IMO)
 
 ### PCB Assembly Tasks
 
-## Diodes
+#### Diodes
 
 Soldering the diodes is probably the easiest task. We're first going to want to bend the legs of the diodes so that they're roughly spaced like the pads on the PCB.
 
-![](RackMultipart20231006-1-m7hbjw_html_1c2d2745a0b1b709.jpg)
+<p align = "left">
+    <img src="Images/cmkc-keyboard1.jpg" width="500">
+</p>
+
 
 We're then going to put the legs of the diodes through the pads on the board.
 
 **NOTE:** The orientation of the diode is such that the black line seen on the body of the diode matches the line on the silkscreen of the PCB. The line of the body / silkscreen resembles the cathode of the diode.
 
-![](RackMultipart20231006-1-m7hbjw_html_d2c97115a8a4dbfa.jpg)
+<p align = "left">
+    <img src="Images/diode-example.jpg" width="200">
+</p>
+
 
 With the diode in place, I like to bend the legs so that it stays in place and I can "rinse and repeat" for the remaining diodes
 
-![](RackMultipart20231006-1-m7hbjw_html_ab77c0ed91fd5558.jpg)
+<p align = "left">
+    <img src="Images/diode-orientation.jpg" width="500">
+</p>
 
-![image31.jpg](RackMultipart20231006-1-m7hbjw_html_278c1e43b3c7ec37.gif)
+
+<p align = "left">
+    <img src="Images/diode-under-uc.jpg" width="500">
+</p>
+
 
 After we put all the diodes in their pads, solder them, and clip the excess.
 
 **NOTE:** You can save the diode leg clippings and use them as socket male header pins for the uC
 
-![](RackMultipart20231006-1-m7hbjw_html_652ed7342bf25993.jpg) ![](RackMultipart20231006-1-m7hbjw_html_e44b6da1b15a0667.jpg)
+<p align = "left">
+    <img src="Images/diode-clipping.jpg" width="500">
+</p>
 
-![image27.jpg](RackMultipart20231006-1-m7hbjw_html_2dee802eb5a286bb.gif)
+
+<p align = "left">
+    <img src="Images/diodes-in-place.jpg" width="500">
+</p>
 
 You've now put all your diodes on the board
 
@@ -146,42 +187,54 @@ In order to ensure that the socket doesn't fall off before we get a chance to so
 
 Line up the socket so that it's as straight vertically as possible and use tape to hold the socket in place.
 
-![](RackMultipart20231006-1-m7hbjw_html_3021dfe6804ad0f1.jpg)
-
-Solder the pins from the top side of the board. ![](RackMultipart20231006-1-m7hbjw_html_434751652ef9df4d.jpg)
-
-You'll notice that the socket pins get pretty close to where the first two switches mount onto the board. To avoid possible fitment issues, we're going to clip pins 24 and 20 from the top side.
-
-![](RackMultipart20231006-1-m7hbjw_html_3a0a56d7bafa0c16.jpg)
+<p align = "left">
+    <img src="Images/uc.jpg" width="500">
+</p>
+<p align = "left">
+    <img src="Images/uc-taped.jpg" width="500">
+</p>
 
 ###
 
+Solder the pins from the top side of the board.
+
+<p align = "left">
+    <img src="Images/pins-uc.jpg" width="500">
+</p>
+
+You'll notice that the socket pins get pretty close to where the first two switches mount onto the board. To avoid possible fitment issues, we're going to clip pins 24 and 20 from the top side.
+
+<p align = "left">
+    <img src="Images/clipping-pins.jpg" width="500">
+</p>
 
 ### Hardware Fix - Tying Pin 9 to Pin 4
 
 On the schematic I didn't catch that our CLD1 pin is tied to pin 4 on the uC, which is a ground pin (shoutout to @Josh\_little ![](RackMultipart20231006-1-m7hbjw_html_283afa9f61a344e2.png) for catching this error.) Luckily, this is a pretty easy fix. I can't show pictures of how I would recommend fixing this, because by the time this issue was found, I had already mounted the switches and the acrylic was covering where I needed to solder. Below is the pin numbering scheme for reference
 
-![](RackMultipart20231006-1-m7hbjw_html_65679f81d1c351ea.png)
+<p align = "left">
+    <img src="Images/pin-view.png" width="500">
+</p>
 
-####
+
 
 
 #### Recommended Fix - Top Layer
 
 You'll need to solder a piece of wire that connects pin 4 to pin 9 on the top side of the board. The consequence is that this will be visible through the acrylic, so you'll want to do as clean of a job as you can.
 
-![](RackMultipart20231006-1-m7hbjw_html_a643554812fb17b2.png)
-
-####
+<p align = "left">
+    <img src="Images/hardware-fix.png" width="500">
+</p>
 
 
 #### How I did it - Bottom layer underneath socket
 
 I was forced to do the fix this way but I do not recommend doing this if you're new to soldering. You'll notice in the picture that I burned the plastic of the socket. It's not very easy. I took a piece of 30AWG wire ~ 1 inch long and stripped one end so that a little piece of wire was exposed. I tacked that end to pin 4. I then put solder on my tip, held the wire close to pin 9 and burned through the insulation until a solder connection was made. You must be careful not to have too much solder and short and pins together. I then wiggled the excess wire lightly until it snapped off
 
-![](RackMultipart20231006-1-m7hbjw_html_71156fc191b73bd8.jpg)
-
-##
+<p align = "left">
+    <img src="Images/jumper-cable.png" width="500">
+</p>
 
 
 ## uC header pins
@@ -190,15 +243,21 @@ With the socket soldered in, I put the mill-max machine header pins into the soc
 
 **NOTE:** DO NOT POPULATE PIN 4. THAT WILL UNDO THE HARDWARE FIX DESCRIBED ABOVE. The pictures below will show pin 4 being populated,after the bug was found the pin was removed but the pictures had already been taken and I only had one board to assemble to show these steps. This is also where you could use diode legs if you don't have the Mill-Max header pins.
 
-![](RackMultipart20231006-1-m7hbjw_html_f49ca84b6bec5dba.png)
+<p align = "left">
+    <img src="Images/xPopulate.png" width="500">
+</p>
 
 Next place your uC onto the pins
 
-![](RackMultipart20231006-1-m7hbjw_html_87abb840a6ece035.jpg)
+<p align = "left">
+    <img src="Images/nicenano-1.jpg" width="500">
+</p>
 
 Solder the pins to the uC. Try not to use so much solder such that you end up soldering the uC to the socket .
 
-![](RackMultipart20231006-1-m7hbjw_html_bb06b5b0801bfe32.jpg)
+<p align = "left">
+    <img src="Images/nicenano-2.jpg" width="500">
+</p>
 
 Once cooled, you can now remove and replace your uC during debug / assembly.
 
@@ -215,17 +274,13 @@ This is a fairly straightforward process, There are three major components to st
 
 NOTE: There is a sweet spot here, it may take a couple of attempts to get it right, just pop the wire from the housing and retry.
 
-## ![](RackMultipart20231006-1-m7hbjw_html_7ccf9c76eec425c5.png) ![](RackMultipart20231006-1-m7hbjw_html_38a20b63090450e3.png) ![](RackMultipart20231006-1-m7hbjw_html_1eefa3b33a96890.png)
+<p align = "left">
+    <img src="Images/stab1.png" width="500">
+</p>
 
-
-##
-
-
-##
-
-
-##
-
+<p align = "left">
+    <img src="Images/stab2.png" width="500">
+</p>
 
 Side Note: It is common for people to modify their stabilizers. There are two common mods you can do. The first is clipping the stems. On the bottom of the stem there is an excess of plastic, clip them and you're good. The second modification is lube, apply lube to the inside of the housing and the stem where there is motion. On the bent ends of the wire, it's common for people to apply heavy lube or a type of lube called "dielectric grease", it is not necessary but does make a difference. There are endless mods to stabilizers, check out the assembly [source](https://www.keyboard.university/guides/using-screw-in-stabilizers-7nxj6) as well as a clipping [tutorial](https://switchandclick.com/how-to-mod-your-stabilizers-band-aid-clip-and-lube/).
 
@@ -237,9 +292,15 @@ The switches can be a challenge while you're getting the first couple in. I foun
 
 You're going to place the switches through the holes in the acrylic and then solder the switch to the board. Note that you need to take off the acrylic wrap prior to doing this.
 
-![](RackMultipart20231006-1-m7hbjw_html_5a4922c93140ed3.jpg)
+<p align = "left">
+    <img src="Images/solder-switches-1.png" width="500">
+</p>
 
-You want the switches to sit as flush as possible to the acrylic. ![](RackMultipart20231006-1-m7hbjw_html_bf7bc09bd2f7596f.jpg)
+You want the switches to sit as flush as possible to the acrylic.
+
+<p align = "left">
+    <img src="Images/solder-switches-2.jpg" width="500">
+</p>
 
 Fill in all the holes, solder in all the switches, and bloom blam bow you damn near got a keyboard brother.
 
@@ -247,9 +308,10 @@ Fill in all the holes, solder in all the switches, and bloom blam bow you damn n
 
 The OLED is pretty straight forward. Solder the header pins through the holes and then onto the board. It only fits one way. Just remember to be conscious of the heat and not fry the OLED.
 
-![](RackMultipart20231006-1-m7hbjw_html_8635d9719a1c11cd.jpg)
+<p align = "left">
+    <img src="Images/header-pins.jpg" width="500">
+</p>
 
-##
 
 
 ## Demultiplexer
@@ -258,19 +320,27 @@ The demultiplexer is the only SMD part on this board. It is a little challenging
 
 I'd start with "tinning" one pad (i.e. add solder to one pad on one corner).
 
-![](RackMultipart20231006-1-m7hbjw_html_caad3e93664f28c7.jpg)
+<p align = "left">
+    <img src="Images/demux-1.jpg" width="500">
+</p>
 
 With a corner tinned, use some tweezers to grab the IC. Prepare to move the IC onto that pad. We're going to melt the solder on the pad you just tinned and line up all the pins with their respective pads. You can melt the solder a couple of times if you don't get it right on the first shot.
 
 **NOTE:** The long line on the silkscreen indicates Pin 1's position. Pin one is marked with the dot on the package of the IC.
 
-![](RackMultipart20231006-1-m7hbjw_html_56edd10208b10740.jpg)
+<p align = "left">
+    <img src="Images/demux-2.jpg" width="500">
+</p>
 
-![](RackMultipart20231006-1-m7hbjw_html_1eb523808edf9d0c.jpg)
+<p align = "left">
+    <img src="Images/demux-3.jpg" width="500">
+</p>
 
 With one corner tacked down and all the pins lined up, I like to tack a pin on the opposite corner. This makes it so the part doesn't move around while you solder the next couple pins.
 
-![](RackMultipart20231006-1-m7hbjw_html_198b8bb4fc388e96.jpg)
+<p align = "left">
+    <img src="Images/demux-4.jpg" width="500">
+</p>
 
 Note the massive solder blob in the picture above. I'd recommend cleaning that up to avoid shorting pins while soldering the pins immediately to the right.
 
@@ -278,7 +348,10 @@ Proceed to solder the rest of the pins in whatever way you feel comfortable.
 
 ## Rotary Encoder
 
-**I would put the rotary encoder on last because of its height.**
+```diff
+- I would put the rotary encoder on last because of its height.
+```
+
 
 The rotary encoder is pretty straight forward. Put the pins through the holes, solder the pins to the pads, bada-bing you've got a rotary encoder knob on your board. I don't have any images of installing this :'(
 
