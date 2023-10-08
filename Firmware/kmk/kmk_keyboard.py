@@ -10,7 +10,7 @@ from kmk.consts import UnicodeMode
 from kmk.hid import BLEHID, USBHID, AbstractHID, HIDModes
 from kmk.keys import KC, Key
 from kmk.modules import Module
-from kmk.scanners.keypad import MatrixScanner
+from kmk.scanners.digitalio import MatrixScanner
 from kmk.scheduler import Task, cancel_task, create_task, get_due_task
 from kmk.utils import Debug
 
@@ -66,7 +66,6 @@ class KMKKeyboard:
     matrix_update_queue = []
     _trigger_powersave_enable = False
     _trigger_powersave_disable = False
-    i2c_deinit_count = 0
     _go_args = None
     _processing_timeouts = False
     _resume_buffer = []
@@ -331,9 +330,9 @@ class KMKKeyboard:
     def _init_matrix(self) -> None:
         if self.matrix is None:
             self.matrix = MatrixScanner(
-                column_pins=self.col_pins,
-                row_pins=self.row_pins,
-                columns_to_anodes=self.diode_orientation,
+                cols=self.col_pins,
+                rows=self.row_pins,
+                diode_orientation=self.diode_orientation,
             )
 
         try:
@@ -507,7 +506,6 @@ class KMKKeyboard:
         self.sandbox.active_layers = self.active_layers.copy()
 
         self.before_matrix_scan()
-
         self._process_resume_buffer()
 
         for matrix in self.matrix:
