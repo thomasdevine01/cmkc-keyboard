@@ -5,18 +5,4 @@ search_enabled: true
 logo: "Docs/Images/cmkc_icon.png"
 favicon_ico: "Docs/Images/cmkc_icon.png"
 
----
-layout: default
-title: Installation Guide
-nav_order: 2
-has_children: true
----
-
----
-layout: default
-title: Forward
-parent: Installation Guide
-nav_order: 2
----
-
 

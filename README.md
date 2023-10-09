@@ -64,10 +64,10 @@
 
 <div>
     <h3 align = "center">Credits</h3>
-        <ul align = "center">
-            <li>Circuit-Dude<li>
-            <li>Thomas Devine</li>
-        </ul>
+    <div align = "center">
+        <p> Circuit-Dude </p>
+        <p> Thomas Devine </p>
+    </ul>
 </div>
 <h3 align = "center'>
     <a src = "Docs/Sources">Sources</a>
