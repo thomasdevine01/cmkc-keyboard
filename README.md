@@ -1,5 +1,4 @@
-# Chico State Mechanical Keyboard Club
-  
+<h1 align = "center"> CMKC 65% Keyboard</h1>
 
 <p align = "center">
     <img src="Docs/Images/cmkc-keyboard1.jpg" width="500">
@@ -9,45 +8,50 @@
     A 65% keyboard that features a rotary encoder, OLED Screen and Programmable Firmware.
 </p>
 
-## [Installation Guide](Docs/)
+
+<h2 align = "center">
+    <a src = "Docs/">Installation Guide</a>
+</h2>
+
+1. [Foreword](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#foreword)
+2. [Required Parts](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#required-parts)
+3. [Optional parts](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#optional-parts)
+4. [Tools](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#tools)
+5. [Minimum requirements](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#minimum-requirements)
+6. [Quality of Life Improvements](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#quality-of-life-improvements)
+7. [PCBs: Quick Review](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#pcbs-quick-review)
+8. [Soldering: Quick Review](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#soldering-quick-review)
+9. [Soldering Tips](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#soldering-tips)
+10. [PCB Assembly Tasks](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#pcb-assembly-tasks)
+11. [Diodes](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#diodes)
+12. [uC Socket](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#uc-socket)
+13. [Hardware Fix - Tying Pin 9 to Pin 4](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#hardware-fix---tying-pin-9-to-pin-4)
+14. [Recommended Fix - Top Layer](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#recommended-fix---top-layer)
+15. [How I did it - Bottom layer underneath socket](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#how-i-did-it---bottom-layer-underneath-socket)
+16. [uC header pins](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#uc-header-pins)
+17. [Stabilizers](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#stabilizers)
+18. [Assembling Stabilizers](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#assembling-stabilizers)
+19. [Switches](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#switches)
+20. [OLED](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#oled)
+21. [Demultiplexer](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#demultiplexer)
+22. [Rotary Encoder](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#rotary-encoder)
+23. [Soldering Sanity Check](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#soldering-sanity-check)
+
+<h2 align = "center">
+    <a src = "Docs/">Parts</a>
+</h2>
+<h2 align = "center">
+    <a src = "https://discord.gg/PEPvhkmjvg">Discord</a>
+</h2>
   
-  1. [Foreword](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#foreword)
-  2. [Required Parts](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#required-parts)
-  3. [Optional parts](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#optional-parts)
-  4. [Tools](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#tools)
-  5. [Minimum requirements](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#minimum-requirements)
-  6. [Quality of Life Improvements](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#quality-of-life-improvements)
-  7. [PCBs: Quick Review](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#pcbs-quick-review)
-  8. [Soldering: Quick Review](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#soldering-quick-review)
-  9. [Soldering Tips](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#soldering-tips)
-  10. [PCB Assembly Tasks](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#pcb-assembly-tasks)
-  11. [Diodes](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#diodes)
-  12. [uC Socket](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#uc-socket)
-  13. [Hardware Fix - Tying Pin 9 to Pin 4](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#hardware-fix---tying-pin-9-to-pin-4)
-  14. [Recommended Fix - Top Layer](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#recommended-fix---top-layer)
-  15. [How I did it - Bottom layer underneath socket](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#how-i-did-it---bottom-layer-underneath-socket)
-  16. [uC header pins](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#uc-header-pins)
-  17. [Stabilizers](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#stabilizers)
-  18. [Assembling Stabilizers](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#assembling-stabilizers)
-  19. [Switches](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#switches)
-  20. [OLED](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#oled)
-  21. [Demultiplexer](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#demultiplexer)
-  22. [Rotary Encoder](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#rotary-encoder)
-  23. [Soldering Sanity Check](https://github.com/thomasdevine01/cmkc-keyboard/blob/main/Docs/README.md#soldering-sanity-check)
-  
-## [Photo Gallery](Docs/Images)
-## [Parts](Docs/)
-## [Discord](https://discord.gg/PEPvhkmjvg)
-  
-<p align = "left">
+<p align = "center">
     <img src="https://discordapp.com/api/guilds/1065358556045529160/widget.png?style=banner1" alt="Discord Banner 1"/>
 </p>
 
-[Discord Link Here](https://discord.gg/PEPvhkmjvg)
-
-### Credits
-
-- Circuit-Dude
-- Thomas Devine 
+<h3 align = "center">Credits</h3>
+<ul>
+    <li align = "center">Circuit-Dude<li>
+    <li align = "center">Thomas Devine</li>
+</ul>
 
 ### [Sources](Docs/Sources/)
