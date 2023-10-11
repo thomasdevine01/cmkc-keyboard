@@ -62,12 +62,10 @@
     <img src="https://discordapp.com/api/guilds/1065358556045529160/widget.png?style=banner1" alt="Discord Banner 1"/>
 </p>
 
-<div>
-    <h3 align = "center">Credits</h3>
-    <div align = "center">
-        <p> Circuit-Dude </p>
-        <p> Thomas Devine </p>
-    </ul>
+<h3 align = "center">Credits</h3>
+<div align = "center">
+    <p> Circuit-Dude </p>
+    <p> Thomas Devine </p>
 </div>
 <h3 align = "center'>
     <a src = "Docs/Sources">Sources</a>
