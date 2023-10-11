@@ -22,6 +22,6 @@
     <p> Circuit-Dude </p>
     <p> Thomas Devine </p>
 </div>
-<h2 align = "center'>
+<h2 align = "center">
     <a src = "Docs/Sources">Sources</a>
 </h2>
