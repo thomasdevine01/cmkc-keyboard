@@ -6,3 +6,10 @@ logo: "Docs/Images/cmkc_icon.png"
 favicon_ico: "Docs/Images/cmkc_icon.png"
 
 
+aux_links:
+  "CMKC on GitHub":
+    - "https://github.com/thomasdevine01/cmkc-keyboard
+
+nav_external_links:
+  "CMKC on GitHub":
+    - "https://github.com/thomasdevine01/cmkc-keyboard
