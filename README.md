@@ -13,9 +13,6 @@
     <a src = "Docs/">Installation Guide</a>
 </h2>
 
-
-</div>
-
 <h2 align = "center">
     <a src = "Docs/">Parts</a>
 </h2>
