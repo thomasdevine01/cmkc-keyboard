@@ -17,14 +17,11 @@
     <a src = "Docs/">Parts</a>
 </h2>
 
-<div>
-    <h3 align = "center">Credits</h3>
-    <div align = "center">
-        <p> Circuit-Dude </p>
-        <p> Thomas Devine </p>
-    </div>
+<h2 align = "center">Credits</h2>
+<div align = "center">
+    <p> Circuit-Dude </p>
+    <p> Thomas Devine </p>
 </div>
-
-<h3 align = "center">
+<h2 align = "center">
     <a src = "Docs/Sources">Sources</a>
 </h2>
