@@ -54,13 +54,6 @@
 <h2 align = "center">
     <a src = "Docs/">Parts</a>
 </h2>
-<h2 align = "center">
-    <a src = "https://discord.gg/PEPvhkmjvg">Discord</a>
-</h2>
-  
-<p align = "center">
-    <img src="https://discordapp.com/api/guilds/1065358556045529160/widget.png?style=banner1" alt="Discord Banner 1"/>
-</p>
 
 <h3 align = "center">Credits</h3>
 <div align = "center">
