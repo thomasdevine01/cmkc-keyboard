@@ -13,41 +13,6 @@
     <a src = "Docs/">Installation Guide</a>
 </h2>
 
-<div align = "center">
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#foreword">Foreword</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#required-parts">Required Parts</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#optional-parts">Optional Parts</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#tools">Tools</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#pcbs-quick-review">PCBs: Quick Review</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#soldering-quick-review)">Soldering</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#pcb-assembly-tasks">PCB Assembly Tasks</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#hardware-fix---tying-pin-9-to-pin-4">Hardware Fix</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#stabilizers">Stabilizers</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#foreword">Foreword</a>
-    </p>
-    <p>
-        <a src="https://thomasdevine01.github.io/cmkc-keyboard/Docs/#soldering-sanity-check">Soldering Sanity Check</a>
-    </p>
-    
 
 </div>
 
@@ -55,11 +20,11 @@
     <a src = "Docs/">Parts</a>
 </h2>
 
-<h3 align = "center">Credits</h3>
+<h2 align = "center">Credits</h2>
 <div align = "center">
     <p> Circuit-Dude </p>
     <p> Thomas Devine </p>
-</div>
-<h3 align = "center'>
+</ul>
+<h2 align = "center'>
     <a src = "Docs/Sources">Sources</a>
-</h3>
+</h2>
