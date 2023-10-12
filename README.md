@@ -10,11 +10,11 @@
 
 
 <h2 align = "center">
-    <a src = "Docs/">Installation Guide</a>
+    <a href = "Docs/">Installation Guide</a>
 </h2>
 
 <h2 align = "center">
-    <a src = "Docs/">Parts</a>
+    <a href = "Docs/">Parts</a>
 </h2>
 
 <h2 align = "center">Credits</h2>
@@ -23,5 +23,5 @@
     <p> Thomas Devine </p>
 </div>
 <h2 align = "center">
-    <a src = "Docs/Sources">Sources</a>
+    <a href = "Docs/Sources">Sources</a>
 </h2>
