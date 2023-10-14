@@ -16,11 +16,11 @@ nav_order: 1
 
 
 <h2 align = "center">
-    <a href = "Docs/README.md">Installation Guide</a>
+    <a href = "Docs/README.html">Installation Guide</a>
 </h2>
 
 <h2 align = "center">
-    <a href = "Docs/README.md">Parts</a>
+    <a href = "Docs/README.html#required-parts">Parts</a>
 </h2>
 
 <h2 align = "center">Credits</h2>
