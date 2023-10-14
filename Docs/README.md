@@ -1,3 +1,10 @@
+---
+layout: default
+title: Installation Guide
+nav_order: 2
+has_toc: true
+---
+
 <h2> CMKC 60% Keyboard </h2>
 
 ### Table of Contents

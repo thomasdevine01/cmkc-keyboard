@@ -1,3 +1,9 @@
+---
+layout: default
+title: Sources
+nav_order: 5
+---
+
 # List of Sources
 
 - Design based on the Dissatisfaction 65 by [Nicell](https://github.com/Nicell/Dissatisfaction-65) 
