@@ -8,7 +8,6 @@ has_toc: true
 <h2> CMKC 60% Keyboard </h2>
 
 ### Table of Contents
-- If you want to use the Table of Contents for navigating the document - click the hambuger menu on the right hand side
 1. [Foreword](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#foreword)
 2. [Required Parts](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#required-parts)
 3. [Optional parts](https://thomasdevine01.github.io/cmkc-keyboard/Docs/#optional-parts)

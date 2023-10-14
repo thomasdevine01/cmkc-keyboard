@@ -1,3 +1,9 @@
+---
+layout: default
+title: Home
+nav_order: 1
+---
+
 <h1 align = "center"> CMKC 65% Keyboard</h1>
 
 <p align = "center">
@@ -10,11 +16,11 @@
 
 
 <h2 align = "center">
-    <a href = "Docs/">Installation Guide</a>
+    <a href = "Docs/README.md">Installation Guide</a>
 </h2>
 
 <h2 align = "center">
-    <a href = "Docs/">Parts</a>
+    <a href = "Docs/README.md">Parts</a>
 </h2>
 
 <h2 align = "center">Credits</h2>
