@@ -174,7 +174,6 @@ Line up the socket so that it's as straight vertically as possible and use tape 
     <img src="Images/uc-taped.jpg" width="500">
 </p>
 
-###
 
 Solder the pins from the top side of the board.
 
