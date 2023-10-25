@@ -37,14 +37,6 @@
   
 ## [Photo Gallery](Docs/Images)
 ## [Parts](Docs/)
-## [Discord](https://discord.gg/PEPvhkmjvg)
-  
-<p align = "left">
-    <img src="https://discordapp.com/api/guilds/1065358556045529160/widget.png?style=banner1" alt="Discord Banner 1"/>
-</p>
-
-[Discord Link Here](https://discord.gg/PEPvhkmjvg)
-
 ### Credits
 
 - Circuit-Dude
